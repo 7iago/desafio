@@ -1,21 +1,19 @@
 package desafio;
 
 public class Item {
-	Produto item;
+	Produto produto;
 	int quantidade;
-	
-	
 	
 	public Item(Produto item, int quantidade) {
 		super();
-		this.item = item;
+		this.produto = item;
 		this.quantidade = quantidade;
 	}
 
 
 
 	double totalItem() {
-		double total = quantidade * item.preco;
+		double total = quantidade * produto.preco;
 		return total;
 	}
 
@@ -23,7 +21,7 @@ public class Item {
 
 	@Override
 	public String toString() {
-		return "Item = " + item.nome + ", valor unitario = " + item.preco +", quantidade = " + quantidade + ", total do Item = " + totalItem() + "\n ";
+		return "Item = " + produto.nome + ", valor unitario = " + produto.preco +", quantidade = " + quantidade + ", total do Item = " + totalItem() + "\n ";
 	}
 
 	
