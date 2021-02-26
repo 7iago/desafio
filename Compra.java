@@ -11,7 +11,7 @@ public class Compra {
 	}
 	
 	void adicionarItem(String nome, double preco, int qtde) {
-		var produto = new Produto(nome, preco);
+		Produto produto = new Produto(nome, preco);
 		this.itens.add(new Item(produto, qtde));
 	}
 	
